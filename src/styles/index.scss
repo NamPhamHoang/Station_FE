@@ -1,0 +1,11 @@
+@import "./header.scss";
+@import "./banner.scss";
+@import "./footer.scss";
+@import "./detail-journey";
+a {
+  border-bottom: none;
+  &:hover {
+    border-bottom: none;
+    text-decoration: none;
+  }
+}

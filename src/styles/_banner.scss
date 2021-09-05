@@ -1,0 +1,491 @@
+.buy-ticket {
+  background-color: #ce1360;
+  height: 200px;
+  &__container {
+    margin: 0 auto;
+    display: flex;
+    .text-banner {
+      text-align: left;
+      color: white;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      h1 {
+        margin: 0;
+        color: white;
+      }
+      p {
+        font-size: 20px;
+        margin: 10px 0;
+        margin-bottom: 20px;
+      }
+    }
+    .btn-buyticker {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 20px;
+      .box {
+        display: flex;
+        background-color: #ffc40c;
+        margin-left: 50px;
+        width: 200px;
+        border-radius: 5px;
+        padding: 0px 21px;
+        cursor: pointer;
+        box-shadow: 0 3px 5px #640029;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          justify-content: space-between;
+          display: flex;
+          font-weight: 500;
+          width: 100%;
+          margin-bottom: 0;
+          .anticon-plus,
+          .anticon-minus {
+            align-items: center;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 582px) {
+  .buy-ticket {
+    height: auto;
+    &__container {
+      flex-direction: column;
+      .text-banner {
+        h1 {
+        }
+        p {
+        }
+      }
+      .btn-buyticker {
+        .box {
+          margin-left: 0;
+          p {
+            .anticon-plus,
+            .anticon-minus {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.detail-buyticker {
+  padding: 20px 0;
+  background-color: #c30045;
+  &__container {
+    margin: 0 auto;
+    display: flex;
+    color: white;
+
+    box-shadow: 0 3px 5px #640029;
+    .box-left {
+      width: 70%;
+      padding: 50px 0px;
+      padding-left: 10px;
+      .form-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .ant-form-item {
+          margin-bottom: 10px;
+          label {
+            color: white;
+            font-size: 18px;
+            width: 100px;
+            text-align: left;
+            justify-content: flex-start;
+          }
+          .ant-form-item-control-input-content {
+            flex: 0;
+          }
+          .ant-input {
+            width: 233px;
+            height: 45px;
+            border-radius: 5px;
+          }
+        }
+      }
+      .journey {
+        padding: 0 10px;
+        .h3-journey {
+          text-align: left;
+          color: white;
+          padding-left: 10px;
+          margin-top: 25px;
+        }
+        ul {
+          display: flex;
+          list-style: none;
+          padding-left: 0;
+          flex-wrap: wrap;
+          li {
+            background-color: #79002c;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+            box-shadow: 0 3px 5px #640029;
+            margin-bottom: 10px;
+            cursor: pointer;
+            span {
+              padding: 2px 7px;
+              border-radius: 100px;
+              background-color: #c30046;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+      .find-train {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        padding: 0 10px;
+        align-items: center;
+        .btn-findtrain {
+          background-color: #ffc40c;
+          border-color: #ffc40c;
+          color: black;
+          font-weight: 600;
+          height: 44px;
+          width: 150px;
+          border-radius: 5px;
+          font-size: 17px;
+          box-shadow: 0 3px 5px #640029;
+          font-weight: 600;
+        }
+        .avoid {
+          display: flex;
+          background-color: #9a0034;
+          padding: 17px 10px;
+          justify-content: space-between;
+          width: 400px;
+          margin: 0 16px;
+          border-radius: 5px;
+          align-items: center;
+          p {
+            width: 200px;
+            text-align: left;
+            font-size: 17px;
+            /* color: black; */
+            font-weight: 500;
+            margin-bottom: 0;
+          }
+          Button {
+            background-color: #fff;
+            border-color: #fff;
+            color: black;
+            font-weight: 600;
+            height: 44px;
+            width: 150px;
+            border-radius: 5px;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+    .box-right {
+      width: 30%;
+      background-color: white;
+      padding: 20px;
+      h3 {
+        color: #c30046;
+        margin-bottom: 0.4em;
+        text-align: left;
+        font-size: 18px;
+      }
+      h4 {
+        color: #c30046;
+        margin-bottom: 0.4em;
+        text-align: left;
+      }
+      p {
+        color: black;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .detail-buyticker {
+    &__container {
+      .box-left {
+        padding-top: 20px;
+        .form-header {
+          .ant-form-item {
+            width: 100%;
+            label {
+              width: 90px;
+            }
+            .ant-form-item-control-input {
+              display: inline-block;
+            }
+            .ant-form-item-control-input-content {
+              flex: 0;
+            }
+            .ant-input {
+              margin: 0 !important;
+              width: 90% !important;
+            }
+          }
+        }
+        .journey {
+          .h3-journey {
+          }
+          ul {
+            li {
+              span {
+              }
+            }
+          }
+        }
+        .find-train {
+          flex-direction: column;
+          align-items: flex-start;
+          .btn-findtrain {
+          }
+          .avoid {
+            margin: 16px 0;
+            width: 100%;
+            p {
+            }
+            Button {
+            }
+          }
+        }
+      }
+      .box-right {
+        h3 {
+        }
+        h4 {
+        }
+        p {
+        }
+      }
+    }
+  }
+}
+@media (max-width: 582px) {
+  .detail-buyticker {
+    &__container {
+      flex-direction: column;
+      .box-left {
+        width: 100%;
+        .form-header {
+          .ant-form-item {
+            label {
+            }
+            .ant-form-item-control-input {
+            }
+            .ant-form-item-control-input-content {
+              flex: 0;
+            }
+            .ant-input {
+              display: flex;
+            }
+          }
+        }
+        .journey {
+          .h3-journey {
+          }
+          ul {
+            li {
+              span {
+              }
+            }
+          }
+        }
+        .find-train {
+          .btn-findtrain {
+          }
+          .avoid {
+            flex-direction: column;
+            align-items: flex-start;
+            p {
+              width: 100%;
+              margin-bottom: 5px;
+            }
+            Button {
+            }
+          }
+        }
+      }
+      .box-right {
+        width: 100%;
+        height: max-content;
+        h3 {
+        }
+        h4 {
+        }
+        p {
+        }
+      }
+    }
+  }
+}
+
+.falicity {
+  margin-top: 20px;
+  &__container {
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    .left {
+      width: 70%;
+      h2 {
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      .search {
+        display: flex;
+        flex-direction: column;
+        p {
+          font-size: 17px;
+          margin-bottom: 5px;
+        }
+        Input {
+          color: #48484a;
+          background-color: #fff;
+          border: 1px solid #8c8e90;
+          height: 45px;
+          width: 55%;
+          margin-bottom: 15px;
+          border-radius: 5px;
+        }
+        Button {
+          font-weight: 600;
+          box-shadow: 0 3px 5px #00000033;
+          background-color: #ffc40c;
+          border-color: #ffc40c;
+          color: black;
+          height: 40px;
+          width: 115px;
+          border-radius: 5px;
+          font-size: 17px;
+        }
+        a {
+          color: #880038;
+          font-weight: 600;
+          margin: 10px 0;
+        }
+      }
+    }
+    .right {
+      height: max-content;
+      background-color: black;
+      color: white;
+      padding: 20px 10px;
+      text-align: left;
+      width: 29%;
+      h1 {
+        color: white;
+      }
+      ul {
+        padding-left: 20px;
+        li {
+          color: #ffe185;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 582px) {
+  .falicity {
+    &__container {
+      flex-direction: column;
+      .left {
+        width: 100%;
+        h2 {
+        }
+        p {
+        }
+        .search {
+          p {
+          }
+          Input {
+          }
+          Button {
+          }
+          a {
+          }
+        }
+      }
+      .right {
+        width: 100%;
+        h1 {
+        }
+        ul {
+          li {
+          }
+        }
+      }
+    }
+  }
+}
+
+.useful {
+  margin: 0 auto;
+  margin-top: 50px;
+  h1 {
+    color: #880038;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .yes-no {
+    Button {
+      background-color: white;
+      border-color: #939598;
+      color: black;
+      width: 110px;
+      height: 45px;
+      border-radius: 0;
+      &:hover {
+        background-color: #939598;
+      }
+    }
+  }
+  .findmost {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    h3 {
+      font-size: 17px;
+      span {
+        color: #939598;
+        font-size: 15px;
+      }
+    }
+    TextArea {
+      width: 50%;
+      margin: 0 auto;
+    }
+    Button {
+      font-weight: 600;
+      box-shadow: 0 3px 5px #00000033;
+      background-color: #ffc40c;
+      border-color: #ffc40c;
+      color: black;
+      height: 43px;
+      width: 150px;
+      border-radius: 5px;
+      font-size: 15px;
+      margin: 15px auto;
+    }
+    p {
+    }
+  }
+}
