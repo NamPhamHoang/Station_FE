@@ -1,15 +1,16 @@
-import React from "react";
-import { useEffect, useState } from "react";
-import { getUsers } from "./utils/api";
+import React, { useEffect, useState } from "react";
+import { getUsers, fetchAllStations, fetchDetailStation } from "./utils/api";
 import "./App.css";
 import Page from "./pages/index";
 import "antd/dist/antd.css";
 import "./styles/index.scss";
-
 const App = () => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    getUsers().then((data) => {
+    // fetchAllStations.then(data => {
+    //   setUsers(data)
+    // })
+    fetchDetailStation("BGD").then((data) => {
       setUsers(data);
     });
   }, []);

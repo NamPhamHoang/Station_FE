@@ -1,0 +1,454 @@
+{
+    "isError": false,
+    "payload": {
+        "stations": {
+            "StationV4.0": {
+                "ChangeHistory": {
+                    "com:ChangedBy": {
+                        "_text": "s_king_TfW"
+                    },
+                    "com:LastChangedDate": {
+                        "_text": "2021-04-23T00:00:00.000+01:00"
+                    }
+                },
+                "CrsCode": {
+                    "_text": "ABE"
+                },
+                "AlternativeIdentifiers": {
+                    "NationalLocationCode": {
+                        "_text": "381300"
+                    }
+                },
+                "Name": {
+                    "_text": "Aber"
+                },
+                "SixteenCharacterName": {
+                    "_text": "ABER"
+                },
+                "Address": {
+                    "com:PostalAddress": {
+                        "add:A_5LineAddress": {
+                            "add:Line": [
+                                {
+                                    "_text": "Aber station"
+                                },
+                                {
+                                    "_text": "Nantgarw Road"
+                                },
+                                {
+                                    "_text": "Aber"
+                                },
+                                {
+                                    "_text": "Caerphilly"
+                                }
+                            ],
+                            "add:PostCode": {
+                                "_text": "CF83 1AQ"
+                            }
+                        }
+                    }
+                },
+                "Longitude": {
+                    "_text": "-3.229838935"
+                },
+                "Latitude": {
+                    "_text": "51.57496069"
+                },
+                "StationOperator": {
+                    "_text": "AW"
+                },
+                "Staffing": {
+                    "StaffingLevel": {
+                        "_text": "partTime"
+                    },
+                    "ClosedCircuitTelevision": {
+                        "Available": {
+                            "_text": "true"
+                        }
+                    }
+                },
+                "InformationSystems": {
+                    "InformationAvailableFromStaff": {
+                        "_text": "-1"
+                    },
+                    "InformationServicesOpen": {
+                        "com:Annotation": {
+                            "com:Note": {
+                                "_cdata": "Same as ticket office opening times"
+                            }
+                        }
+                    },
+                    "CIS": [
+                        {
+                            "_text": "DepartureScreens"
+                        },
+                        {
+                            "_text": "ArrivalScreens"
+                        }
+                    ],
+                    "CustomerHelpPoints": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    }
+                },
+                "Fares": {
+                    "TicketOffice": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "TicketMachine": {
+                        "Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "OystercardIssued": {
+                        "_text": "false"
+                    },
+                    "UseOystercard": {
+                        "_text": "false"
+                    },
+                    "AlwaysShowOysterCardFields": {
+                        "_text": "false"
+                    },
+                    "SmartcardIssued": {
+                        "_text": "false"
+                    },
+                    "SmartcardValidator": {
+                        "_text": "true"
+                    },
+                    "SmartcardComments": {
+                        "com:Note": {
+                            "_cdata": "<p>Load a pre-purchased season ticket onto a smartcard using the smartcard validator. </p>"
+                        }
+                    },
+                    "PenaltyFares": {
+                        "Url": {
+                            "_text": "https://tfwrail.wales/policies-and-reports/revenue-protection-policy"
+                        }
+                    }
+                },
+                "PassengerServices": {
+                    "CustomerService": {
+                        "com:Annotation": {
+                            "com:Note": {
+                                "_cdata": "Contact our Customer Relations team directly via the customer webform at <a href=\"https://tfwrail.wales\">www.tfwrail.wales</a>"
+                            }
+                        }
+                    },
+                    "LeftLuggage": {
+                        "com:ContactDetails": {
+                            "com:Url": {
+                                "_text": "https://www.nationalrail.co.uk/"
+                            }
+                        },
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "LostProperty": {
+                        "com:ContactDetails": {
+                            "com:PrimaryTelephoneNumber": {
+                                "com:TelNationalNumber": {
+                                    "_text": "03333 211 202"
+                                }
+                            },
+                            "com:Url": {
+                                "_text": "https://www.nationalrail.co.uk/"
+                            }
+                        },
+                        "com:Available": {
+                            "_text": "true"
+                        },
+                        "com:OperatorName": {
+                            "_cdata": "<a href=\"https://tfw.missingx.com/\">Transport for Wales</a>"
+                        }
+                    }
+                },
+                "StationFacilities": {
+                    "FirstClassLounge": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "SeatedArea": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "WaitingRoom": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "Trolleys": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "StationBuffet": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "Toilets": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "BabyChange": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "Showers": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "Telephones": {
+                        "com:Exists": {
+                            "_text": "true"
+                        },
+                        "com:UsageType": {
+                            "_text": "CardsAndCoins"
+                        }
+                    },
+                    "WiFi": {
+                        "com:Annotation": {
+                            "com:Note": {
+                                "_cdata": "<p><a href=\"https://www.btwifi.co.uk/find/\" target=\"_blank\" rel=\"nofollow\">Find WiFi Hotspots around Aber station</a></p>"
+                            }
+                        },
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "WebKiosk": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "PostBox": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "TouristInformation": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "AtmMachine": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "BureauDeChange": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "Shops": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    }
+                },
+                "Accessibility": {
+                    "Helpline": {
+                        "com:ContactDetails": {
+                            "com:Annotation": {
+                                "com:Note": {
+                                    "_cdata": "03333 211202"
+                                }
+                            },
+                            "com:Url": {
+                                "_text": "https://www.nationalrail.co.uk/"
+                            }
+                        },
+                        "com:Open": {
+                            "com:DayAndTimeAvailability": {
+                                "com:DayTypes": {
+                                    "com:MondayToSunday": {
+                                        "_text": "true"
+                                    }
+                                },
+                                "com:OpeningHours": {
+                                    "com:OpenPeriod": {
+                                        "com:StartTime": {
+                                            "_text": "08:00:00.000"
+                                        },
+                                        "com:EndTime": {
+                                            "_text": "20:00:00.000"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "StaffHelpAvailable": {
+                        "com:Annotation": {
+                            "com:Note": {
+                                "_cdata": "<span style=\"font-size: 16px;\"><span style=\"font-size: 14px;\"><span style=\"font-size: 12px;\">No platform staff available. Assistance is provided by the Conductor on the train.</span></span></span>"
+                            }
+                        },
+                        "com:Available": {
+                            "_text": "true"
+                        }
+                    },
+                    "InductionLoop": {
+                        "_text": "true"
+                    },
+                    "AccessibleTicketMachines": {
+                        "com:Annotation": {
+                            "com:Note": {
+                                "_cdata": "<p>The ticket machine takes debit and credit cards only. </p>"
+                            }
+                        },
+                        "com:Available": {
+                            "_text": "true"
+                        }
+                    },
+                    "HeightAdjustedTicketOfficeCounter": {
+                        "com:Available": {
+                            "_text": "true"
+                        }
+                    },
+                    "RampForTrainAccess": {
+                        "com:Available": {
+                            "_text": "true"
+                        }
+                    },
+                    "NearestStationsWithMoreFacilities": {
+                        "com:CrsCode": [
+                            {
+                                "_text": "ECP"
+                            },
+                            {
+                                "_text": "YSM"
+                            }
+                        ]
+                    },
+                    "NationalKeyToilets": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "StepFreeAccess": {
+                        "com:Annotation": {
+                            "com:Note": {
+                                "_cdata": "<p><span style=\"font-size:16px\"><span style=\"font-size:16px\"><span style=\"font-size:14px\"><span style=\"font-size:12px\">Category B1</span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:16px\"><span style=\"font-size:16px\"><span style=\"font-size:14px\"><span style=\"font-size:12px\">Wheelchair users, mobility scooter users and customers with reduced mobility may find the steep ramps leading from Nantgarw Road to both platforms difficult to negotiate.</span></span></span></span></p>\r\n\r\n<p><span style=\"font-size:16px\"><span style=\"font-size:16px\"><span style=\"font-size:14px\"><span style=\"font-size:12px\"><span style=\"font-size:12pt; line-height:107%\"><span style=\"font-size:12px\">Find out more information here&nbsp;</span></span><a href=\"https://tfwrail.wales/before-your-journey/accessible-travel/station-accessibility\" originalattribute=\"href\" originalpath=\"https://tfwrail.wales/before-your-journey/accessible-travel/station-accessibility\"><span style=\"font-size:12pt; line-height:107%\"><span style=\"font-size:12px\">https://tfwrail.wales/before-your-journey/accessible-travel/station-accessibility</span></span></a> </span></span></span></span></p>\r\n\r\n<p>&nbsp;</p>"
+                            }
+                        },
+                        "Coverage": {
+                            "_text": "wholeStation"
+                        }
+                    },
+                    "ImpairedMobilitySetDown": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    },
+                    "WheelchairsAvailable": {
+                        "com:Available": {
+                            "_text": "false"
+                        }
+                    }
+                },
+                "Interchange": {
+                    "CycleStorage": {
+                        "Spaces": {
+                            "_text": "0"
+                        },
+                        "Sheltered": {
+                            "_text": "No"
+                        },
+                        "Cctv": {
+                            "_text": "true"
+                        }
+                    },
+                    "CarPark": {
+                        "com:ContactDetails": {
+                            "com:PostalAddress": {
+                                "add:Line": [
+                                    {
+                                        "_text": "-"
+                                    },
+                                    {
+                                        "_text": "-"
+                                    }
+                                ]
+                            },
+                            "com:Url": {
+                                "_text": "https://www.nationalrail.co.uk/"
+                            }
+                        },
+                        "com:Open": {
+                            "com:DayAndTimeAvailability": {
+                                "com:DayTypes": {
+                                    "com:MondayToFriday": {
+                                        "_text": "true"
+                                    }
+                                },
+                                "com:OpeningHours": {
+                                    "com:TwentyFourHours": {
+                                        "_text": "true"
+                                    }
+                                }
+                            }
+                        },
+                        "com:OperatorName": {
+                            "_cdata": "Local Authority"
+                        },
+                        "Name": {
+                            "_cdata": "Station Car Park"
+                        },
+                        "Spaces": {
+                            "_text": "128"
+                        },
+                        "Charges": {
+                            "Free": {
+                                "_text": "true"
+                            }
+                        },
+                        "NumberAccessibleSpaces": {
+                            "_text": "0"
+                        },
+                        "AccessibleCarParkEquipment": {
+                            "_text": "true"
+                        },
+                        "Cctv": {
+                            "_text": "false"
+                        }
+                    },
+                    "RailReplacementServices": {
+                        "com:Annotation": {
+                            "com:Note": {
+                                "_cdata": "Use the bus stops under the bridge on Nantgarw Road"
+                            }
+                        }
+                    },
+                    "TaxiRank": {
+                        "com:Annotation": {
+                            "com:Note": {
+                                "_cdata": "<p>There is no taxi rank at this station. </p>"
+                            }
+                        }
+                    }
+                },
+                "StationAlerts": {
+                    "AlertText": {
+                        "_cdata": "<div style=\"border: 0px none currentcolor; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline;\">\r\n<p class=\"x_MsoNormal\" style=\"font-size: 11pt; margin: 0cm 0cm 0pt;\"><span style=\"border: 0px none currentcolor; font-size: 12pt; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline;\">13 April 2020</span></p>\r\n<p class=\"x_MsoNormal\" style=\"font-size: 11pt; margin: 0cm 0cm 0pt;\"><span style=\"border: 0px none currentcolor; font-size: 12pt; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline;\"><br />\r\n</span></p>\r\n<p class=\"x_MsoNormal\" style=\"font-size: 11pt; margin: 0cm 0cm 0pt;\"><span style=\"border: 0px none currentcolor; font-size: 12pt; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline;\">This ticket office is closed permanently.</span><span style=\"border: 0px none currentcolor; font-size: 12pt; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline;\"></span></p>\r\n</div>\r\n<span style=\"font-size: 15px; font-variant-numeric: normal; font-variant-east-asian: normal;\">\r\n</span>\r\n<p><span style=\"font-size: 12pt; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">To purchase a ticket, download our app TfW Rail or buy online at tfwrail.wales</span> </p>"
+                    }
+                },
+                "TrainOperatingCompanies": {
+                    "TocRef": {
+                        "_text": "AW"
+                    }
+                }
+            }
+        }
+    }
+}
