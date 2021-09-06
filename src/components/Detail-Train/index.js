@@ -6,7 +6,8 @@ import Facility from "./Facilities";
 import Accesibility from "./Accesibility";
 import Transport from "./Transport";
 
-const Train = () => {
+const Train = ({ stations, setStation }) => {
+  console.log(stations);
   return (
     <div className="Train">
       <Buying />

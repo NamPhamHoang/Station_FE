@@ -10,8 +10,6 @@ const HomePage = ({ stations, setStation }) => {
         <Route path="/">
           <Home stations={stations} setStation={setStation} />
         </Route>
-      </Switch>
-      <Switch>
         <Route path="/detail">
           <Detail stations={stations} setStation={setStation} />
         </Route>

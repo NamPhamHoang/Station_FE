@@ -10,7 +10,7 @@ const Homeroute = ({ stations, setStation }) => {
     <div className="home-page">
       <Header />
       <Banner />
-      <DetailStation />
+      <DetailStation stations={stations} setStation={setStation} />
       <UseFul />
       <Footer />
     </div>
