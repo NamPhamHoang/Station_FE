@@ -10,7 +10,7 @@ const HomePage = ({ stations, setStation }) => {
         <Route exact path="/">
           <Home stations={stations} setStation={setStation} />
         </Route>
-        <Route exact path="/detail">
+        <Route exact path="/detail/:CrsCode">
           <Detail stations={stations} setStation={setStation} />
         </Route>
       </Switch>
