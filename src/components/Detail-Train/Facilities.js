@@ -8,9 +8,8 @@ import {
 import { Table, Tag, Space } from "antd";
 import { useState } from "react/cjs/react.development";
 
-const Facility = () => {
+const Facility = ({facility}) => {
   const [showBuying, setShowBuying] = useState(false);
-
   const columns = [
     {
       title: "Facility",
@@ -29,67 +28,67 @@ const Facility = () => {
     {
       key: "1",
       name: "Seating area",
-      age: "Contact our Customer Relations team directly via the customer webform at www.tfwrail.wales",
+      age: facility.SeatedArea === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "2",
       name: "Waiting rooms",
-      age: 42,
+      age: facility.WaitingRoom === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "3",
       name: "Trolleys",
-      age: 42,
+      age: facility.Trolleys === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "4",
       name: "Refreshment facilities",
-      age: "0800 40 50 40",
+      age: facility.Refreshment === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "5",
       name: "Toilets",
-      age: 42,
+      age: facility.Toilets === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "6",
       name: "Baby changing",
-      age: 42,
+      age: facility.BabyChange === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "7",
       name: "Pay phone",
-      age: 42,
+      age: facility.Telephones === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "8",
       name: "Public Wi-Fi",
-      age: 42,
+      age: facility.WiFi === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "9",
       name: "Post box",
-      age: 42,
+      age: facility.PostBox === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "10",
       name: "Tourist information office",
-      age: 42,
+      age: facility.TouristInformation === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "11",
       name: "Cashpoint",
-      age: 42,
+      age: facility.Cashpoint === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "12",
       name: "Bureau de change",
-      age: 42,
+      age: facility.BureauDeChange === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "13",
       name: "Shops",
-      age: 42,
+      age: facility.Shops === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
   ];
 

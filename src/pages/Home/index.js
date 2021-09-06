@@ -1,20 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Banner from "../../components/BannerBuyTicket";
-import DetailStation from "../../components/Detail-Train";
-import UseFul from "../../components/Useful";
-
-const Homeroute = ({ stations, setStation }) => {
+import Facility from "../../components/Facility";
+const Detail = ({ stations, setStation }) => {
   return (
-    <div className="home-page">
+    <div className="detail">
       <Header />
       <Banner />
-      <DetailStation stations={stations} setStation={setStation} />
-      <UseFul />
+      <Facility stations={stations} setStation={setStation} />
       <Footer />
     </div>
   );
 };
 
-export default Homeroute;
+export default Detail;

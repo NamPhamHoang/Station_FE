@@ -8,9 +8,8 @@ import {
 import { Table, Tag, Space } from "antd";
 import { useState } from "react/cjs/react.development";
 
-const Transport = () => {
+const Transport = ({transport}) => {
   const [showBuying, setShowBuying] = useState(false);
-
   const columns = [
     {
       title: "Service",
@@ -29,22 +28,22 @@ const Transport = () => {
     {
       key: "1",
       name: "Cycle storage availability",
-      age: "Contact our Customer Relations team directly via the customer webform at www.tfwrail.wales",
+      age: transport.CycleStorage.Spaces,
     },
     {
       key: "2",
       name: "Car park",
-      age: 42,
+      age: transport.CarPark.Spaces,
     },
     {
       key: "3",
       name: "Taxi rank",
-      age: 42,
+      age: transport.TaxiRank  ? transport.TaxiRank.note : ""
     },
     {
       key: "4",
       name: "Bus services",
-      age: "0800 40 50 40",
+      age: transport.RailReplacementServices ? transport.RailReplacementServices.note : ""
     },
   ];
 

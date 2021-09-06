@@ -28,7 +28,7 @@ const Facility = ({ stations, setStation }) => {
     if (selectCode !== "") {
       fetchDetailStation(selectCode).then((data) => {
         setStation(data);
-        history.push("/");
+        history.push("/detail");
       });
     }
   };

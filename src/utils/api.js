@@ -27,6 +27,10 @@ export const fetchAllStations = async () => {
 };
 
 export const fetchDetailStation = async (CsrCode) => {
-  const { data: station } = await api.get(`/station?CrsCode=${CsrCode}`);
+  const { data: {
+    payload: {
+      stations: station
+    }
+  } } = await api.get(`/station?CrsCode=${CsrCode}`);
   return station;
 };

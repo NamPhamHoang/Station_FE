@@ -8,9 +8,8 @@ import {
 import { Table, Tag, Space } from "antd";
 import { useState } from "react/cjs/react.development";
 
-const DetailStation = () => {
+const DetailStation = ({fare}) => {
   const [showBuying, setShowBuying] = useState(false);
-
   const columns = [
     {
       title: "Facility",
@@ -22,6 +21,9 @@ const DetailStation = () => {
       title: "	Information",
       dataIndex: "age",
       key: "age",
+      render: (text) => (
+        text === "false" ? <CloseOutlined/> : <CheckOutlined/>
+      )
     },
   ];
 
@@ -29,17 +31,17 @@ const DetailStation = () => {
     {
       key: "1",
       name: "Ticket office opening hours",
-      age: <CloseOutlined />,
+      age: fare.TicketOffice,
     },
     {
       key: "2",
       name: "Self service ticket machines",
-      age: <CloseOutlined />,
+      age: fare.TicketMachine,
     },
     {
       key: "3",
       name: "Collection of pre-purchased tickets",
-      age: <CloseOutlined />,
+      age: fare.SmartcardValidator,
     },
   ];
 

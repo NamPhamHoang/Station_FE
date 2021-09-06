@@ -7,10 +7,10 @@ const HomePage = ({ stations, setStation }) => {
   return (
     <Router>
       <Switch>
-        <Route path="/">
+        <Route exact path="/">
           <Home stations={stations} setStation={setStation} />
         </Route>
-        <Route path="/detail">
+        <Route exact path="/detail">
           <Detail stations={stations} setStation={setStation} />
         </Route>
       </Switch>

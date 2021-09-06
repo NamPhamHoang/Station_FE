@@ -8,9 +8,8 @@ import {
 import { Table, Tag, Space } from "antd";
 import { useState } from "react/cjs/react.development";
 
-const Information = () => {
+const Information = ({infor}) => {
   const [showBuying, setShowBuying] = useState(false);
-
   const columns = [
     {
       title: "Facility",
@@ -29,7 +28,7 @@ const Information = () => {
     {
       key: "1",
       name: "Lounge",
-      age: "Contact our Customer Relations team directly via the customer webform at www.tfwrail.wales",
+      age: infor.lounge === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
   ];
 

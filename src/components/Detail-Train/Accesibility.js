@@ -8,9 +8,8 @@ import {
 import { Table, Tag, Space } from "antd";
 import { useState } from "react/cjs/react.development";
 
-const Accesibility = () => {
+const Accesibility = ({accesibility}) => {
   const [showBuying, setShowBuying] = useState(false);
-
   const columns = [
     {
       title: "Facility",
@@ -29,72 +28,72 @@ const Accesibility = () => {
     {
       key: "1",
       name: "Helpline",
-      age: "Contact our Customer Relations team directly via the customer webform at www.tfwrail.wales",
+      age: accesibility.Helpline === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "2",
       name: "Customer help points",
-      age: 42,
+      age: accesibility.Helpline === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "3",
       name: "Staff help",
-      age: 42,
+      age: accesibility.StaffHelpAvailable === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "4",
       name: "Accessible ticket machines",
-      age: "0800 40 50 40",
+      age: accesibility.AccessibleTicketMachines === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "5",
       name: "Accessible ticket office counter",
-      age: 42,
+      age: accesibility.HeightAdjustedTicketOfficeCounter === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "6",
       name: "Induction loop",
-      age: 42,
+      age: accesibility.InductionLoop === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "7",
       name: "Ramp for train access",
-      age: 42,
+      age: accesibility.RampForTrainAccess === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "8",
       name: "Accessible taxis",
-      age: 42,
+      age: accesibility.Helpline === "false" ? <CloseOutlined/> : <CheckOutlined/>
     },
     {
       key: "9",
       name: "Accessible public pay phones",
-      age: 42,
+      age: accesibility.Helpline === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
     {
       key: "10",
       name: "National key toilets",
-      age: 42,
+      age:accesibility.NationalKeyToilets === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
-    {
-      key: "11",
-      name: "Step free access coverage",
-      age: 42,
-    },
+    // {
+    //   key: "11",
+    //   name: "Step free access coverage",
+    //   age: accesibility.Helpline === "false" ? <CloseOutlined/> : <CheckOutlined/>,
+    // },
     {
       key: "12",
       name: "Impaired mobility set down",
-      age: 42,
+      age: accesibility.ImpairedMobilitySetDown === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
-    {
-      key: "13",
-      name: "Disabled parking",
-      age: 42,
-    },
+    // {
+    //   key: "13",
+    //   name: "Disabled parking",
+    //   age: accesibility.Helpline === "false" ? <CloseOutlined/> : <CheckOutlined/>,
+    // },
     {
       key: "14",
       name: "Wheelchairs",
-      age: 42,
+      age: accesibility.WheelchairsAvailable === "false" ? <CloseOutlined/> : <CheckOutlined/>,
     },
   ];
 
