@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
-import { Form, Input, Button, Checkbox, AutoComplete } from "antd";
+import { Form, Input, Button, Checkbox, AutoComplete, Spin, Alert } from "antd";
 import { getUsers, fetchAllStations, fetchDetailStation } from "../utils/api";
 import UseFul from "./Useful";
 import { useHistory } from "react-router";
@@ -9,10 +9,12 @@ const Facility = ({ stations, setStation }) => {
   const [code, setCode] = useState([]);
   const [selectCode, setSelectCode] = useState("");
   const history = useHistory();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetchAllStations().then((data) => {
       setCode(data);
+      setLoading(false)
     });
   }, []);
 
@@ -47,7 +49,14 @@ const Facility = ({ stations, setStation }) => {
             </p>
             <div className="search">
               <p>Station search by name, location</p>
+              <Spin 
+                spinning={loading}  
+                style={{
+                  width: 200,
+                }}>
+              </Spin>
               <AutoComplete
+                disabled={loading}
                 style={{
                   width: 200,
                 }}

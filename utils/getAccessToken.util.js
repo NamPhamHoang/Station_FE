@@ -13,7 +13,6 @@ export const getAccessToken = async () => {
                 password: process.env.REACT_APP_PASSWORD
             }
         })
-    
         if(response.status === 200) {
             return response.data
         }
