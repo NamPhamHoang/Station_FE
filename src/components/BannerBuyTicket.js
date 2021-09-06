@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
 import { Form, Input, Button, Checkbox } from "antd";
 import ShowTicket from "./ShowTicket";
-import Facility from "./Facility";
 
 const BuyTicket = () => {
   const [showTicket, setShowTicket] = useState(false);
@@ -40,8 +39,6 @@ const BuyTicket = () => {
       </div>
       {/* SHOW */}
       <ShowTicket showTicket={showTicket} />
-      {/* Facility */}
-      <Facility />
     </>
   );
 };

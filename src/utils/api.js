@@ -18,7 +18,12 @@ export const getStations = () => {
 
 export const fetchAllStations = async () => {
   const { data: stations } = await api.get("/stations");
-  return stations;
+  const code = [];
+  stations &&
+    stations.payload.stations.filter((item) =>
+      code.push({ value: item.Name, CrsCode: item.CrsCode })
+    );
+  return code;
 };
 
 export const fetchDetailStation = async (CsrCode) => {

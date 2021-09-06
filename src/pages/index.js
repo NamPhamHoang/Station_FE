@@ -9,6 +9,8 @@ const HomePage = () => {
       <Router>
         <Switch>
           <Route path="/" component={Home}></Route>
+        </Switch>
+        <Switch>
           <Route path="/detail" component={Detail}></Route>
         </Switch>
       </Router>

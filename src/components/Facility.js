@@ -1,33 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
 import { Form, Input, Button, Checkbox, AutoComplete } from "antd";
+import { getUsers, fetchAllStations, fetchDetailStation } from "../utils/api";
+import UseFul from "./Useful";
 
 const Facility = () => {
-  const { Option } = AutoComplete;
-  const { TextArea } = Input;
-  const [showFeed, setShowFeed] = useState(false);
-  const [showFeedYes, setShowFeedYes] = useState("");
+  const [code, setCode] = useState([]);
+  const [stations, setStation] = useState([]);
+  const [selectCode, setSelectCode] = useState("");
 
-  const [result, setResult] = useState([]);
-  const handleSearch = (value) => {
-    let res = [];
-    if (!value || value.indexOf("@") >= 0) {
-      res = [];
-    } else {
-      res = ["gmail.com", "163.com", "qq.com"].map(
-        (domain) => `${value}@${domain}`
-      );
-    }
-    setResult(res);
+  useEffect(() => {
+    fetchAllStations().then((data) => {
+      setCode(data);
+    });
+  }, []);
+
+  const onSelect = (value) => {
+    code.filter((item) => {
+      if (item.value === value) {
+        setSelectCode(item.CrsCode);
+      }
+    });
   };
 
-  const handleShow = (value) => {
-    setShowFeed(true);
-    if (value == "yes") {
-      setShowFeedYes("yes");
-    } else {
-      setShowFeedYes("no");
-    }
+  const onSubmitStation = () => {
+    fetchDetailStation(selectCode).then((data) => {
+      setStation(data);
+    });
   };
 
   return (
@@ -44,19 +43,22 @@ const Facility = () => {
             </p>
             <div className="search">
               <p>Station search by name, location</p>
-              <Input placeholder="Search for station" />
               <AutoComplete
-                style={{ width: 200 }}
-                onSearch={handleSearch}
-                placeholder="input here"
-              >
-                {result.map((email) => (
-                  <Option key={email} value={email}>
-                    {email}
-                  </Option>
-                ))}
-              </AutoComplete>
-              <Button type="primary">Submit</Button>
+                style={{
+                  width: 200,
+                }}
+                options={code}
+                placeholder="Search for station"
+                filterOption={(inputValue, option) =>
+                  option.value
+                    .toUpperCase()
+                    .indexOf(inputValue.toUpperCase()) !== -1
+                }
+                onSelect={onSelect}
+              />
+              <Button type="primary" onClick={onSubmitStation}>
+                Submit
+              </Button>
               <a>Show A-Z list of all stations</a>
             </div>
           </div>
@@ -71,53 +73,8 @@ const Facility = () => {
           </div>
         </div>
       </div>
-
-      <div className="useful container">
-        <h1>Did you find this page useful?</h1>
-        <div className="yes-no">
-          <Button
-            type="primary"
-            style={
-              showFeedYes == "yes"
-                ? { backgroundColor: "#6f002e", color: "white" }
-                : {}
-            }
-            onClick={() => handleShow("yes")}
-          >
-            Yes
-          </Button>
-          <Button
-            style={
-              showFeedYes == "no"
-                ? { backgroundColor: "#6f002e", color: "white" }
-                : {}
-            }
-            type="primary"
-            onClick={() => handleShow("no")}
-          >
-            No
-          </Button>
-        </div>
-
-        {showFeed && (
-          <div className="findmost">
-            {showFeedYes == "yes" ? (
-              <h3>
-                "What did you find most useful?"
-                <span>(Optional)</span>
-              </h3>
-            ) : (
-              <h3>
-                "What was it you were trying to do?"
-                <span>(Optional)</span>
-              </h3>
-            )}
-            <TextArea rows={6} />
-            <Button type="primary">Send feedback</Button>
-            <p>Your feedback will help us to improve this page.</p>
-          </div>
-        )}
-      </div>
+      {/* USEFUL */}
+      <UseFul />
     </>
   );
 };
