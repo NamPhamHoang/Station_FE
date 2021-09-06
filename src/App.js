@@ -5,9 +5,11 @@ import Page from "./pages/index";
 import "antd/dist/antd.css";
 import "./styles/index.scss";
 const App = () => {
+  const [stations, setStation] = useState([]);
+
   return (
     <div>
-      <Page />
+      <Page stations={stations} setStation={setStation} />
     </div>
   );
 };

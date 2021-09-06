@@ -3,11 +3,12 @@ import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
 import { Form, Input, Button, Checkbox, AutoComplete } from "antd";
 import { getUsers, fetchAllStations, fetchDetailStation } from "../utils/api";
 import UseFul from "./Useful";
+import { useHistory } from "react-router";
 
-const Facility = () => {
+const Facility = ({ stations, setStation }) => {
   const [code, setCode] = useState([]);
-  const [stations, setStation] = useState([]);
   const [selectCode, setSelectCode] = useState("");
+  const history = useHistory();
 
   useEffect(() => {
     fetchAllStations().then((data) => {
@@ -24,9 +25,12 @@ const Facility = () => {
   };
 
   const onSubmitStation = () => {
-    fetchDetailStation(selectCode).then((data) => {
-      setStation(data);
-    });
+    if (selectCode !== "") {
+      fetchDetailStation(selectCode).then((data) => {
+        setStation(data);
+        history.push("/");
+      });
+    }
   };
 
   return (

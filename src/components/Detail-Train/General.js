@@ -1,5 +1,10 @@
 import React from "react";
-import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
+import {
+  PlusOutlined,
+  MinusOutlined,
+  CloseOutlined,
+  CheckOutlined,
+} from "@ant-design/icons";
 import { Table, Tag, Space } from "antd";
 import { useState } from "react/cjs/react.development";
 
@@ -29,12 +34,12 @@ const General = () => {
     {
       key: "2",
       name: "Left luggage",
-      age: 42,
+      age: <CloseOutlined />,
     },
     {
       key: "3",
       name: "Lost property (at the station)",
-      age: 42,
+      age: <CheckOutlined />,
     },
     {
       key: "4",

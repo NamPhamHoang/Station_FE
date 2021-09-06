@@ -1,5 +1,10 @@
 import React from "react";
-import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
+import {
+  PlusOutlined,
+  MinusOutlined,
+  CloseOutlined,
+  CheckOutlined,
+} from "@ant-design/icons";
 import { Table, Tag, Space } from "antd";
 import { useState } from "react/cjs/react.development";
 

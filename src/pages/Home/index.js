@@ -5,7 +5,7 @@ import Banner from "../../components/BannerBuyTicket";
 import DetailStation from "../../components/Detail-Train";
 import UseFul from "../../components/Useful";
 
-const Homeroute = () => {
+const Homeroute = ({ stations, setStation }) => {
   return (
     <div className="home-page">
       <Header />

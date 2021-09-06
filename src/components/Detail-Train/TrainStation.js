@@ -1,5 +1,10 @@
 import React from "react";
-import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
+import {
+  PlusOutlined,
+  MinusOutlined,
+  CloseOutlined,
+  CheckOutlined,
+} from "@ant-design/icons";
 import { Table, Tag, Space } from "antd";
 import { useState } from "react/cjs/react.development";
 
@@ -24,17 +29,17 @@ const DetailStation = () => {
     {
       key: "1",
       name: "Ticket office opening hours",
-      age: 32,
+      age: <CloseOutlined />,
     },
     {
       key: "2",
       name: "Self service ticket machines",
-      age: 42,
+      age: <CloseOutlined />,
     },
     {
       key: "3",
       name: "Collection of pre-purchased tickets",
-      age: 42,
+      age: <CloseOutlined />,
     },
   ];
 

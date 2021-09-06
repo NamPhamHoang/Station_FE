@@ -3,18 +3,20 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home/index";
 import Detail from "./Details/index";
 
-const HomePage = () => {
+const HomePage = ({ stations, setStation }) => {
   return (
-    <div className="homepage">
-      <Router>
-        <Switch>
-          <Route path="/" component={Home}></Route>
-        </Switch>
-        <Switch>
-          <Route path="/detail" component={Detail}></Route>
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <Home stations={stations} setStation={setStation} />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path="/detail">
+          <Detail stations={stations} setStation={setStation} />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 
